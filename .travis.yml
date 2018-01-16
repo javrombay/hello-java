@@ -1,5 +1,12 @@
 language: java
-jdk: 
- - oraclejdk8
- - openjdk8
- - oraclejdk9
+jdk:
+- oraclejdk8
+- openjdk8
+- oraclejdk9
+deploy:
+  provider: heroku
+  api_key:
+    secure: nKfkUbTji3uQYsbK4Z9YUFxlnxtSwUB7UiwpLiF98SZGvEW8xA3ghW+U7C2tlUaH7lDlLK0uPdznD5jo0x2O+4+dGzog4XXPj7iXsJjSzJhJLMxCqM3ubAmIfMnWmZqOPW16e/JxSfxAnOqs8PkL1Tya6eiia25QaolY7sWTIJHgejz31Suv0Xt50XMxqGQey80miCyswGSAIfQpZXm9QP6QNpuyeTS/l0t29uWK1O1scSObgJxfC2Cu/e1eRmgG0Nba5MfqNb/U4b+W+tz52eUhYYoGEzj3ubB4LwpDHwx1YdmmkeI6bTgi5hHYg71NZVPjfqTfAvNn2zOVhqJlsaj95xiwyY0VDwY09N9SEesOqqbf6CBzGy5BjRTlQVber7rTd/2aHM4RUJHf8UFv4BX8IM3GwoXcmx/bUW4DYTTYL2rGHgjzMsv8ilz5Rwx6QXoqOikKM0DU5SLQ79i1A4XTBZWus1BqKcuwVFqX7h5CKQretRKG5YIKLD1bLCXoLfYFCenQJM0jfPG7gDVKzJ5xlc/NWHQs3rdUfx/MdQTTB4vAn90jnbzIyhpG7VcEHf+6VRC8qa/GMhKKxEQYeTmAxWMnfi1tgvcJxCNSoxb6EJ9Ib45AWKLT6kGavvCDsO4IR3EYNkbFBoJjXZPqd35V2uLXwSxbnd5IXXHe3iQ=
+  app: hello-java-javrombay
+  on:
+    repo: javrombay/hello-java
